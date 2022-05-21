@@ -1,0 +1,12 @@
+<mat-toolbar color="primary" class="mat-elevation-z8">
+    <mat-icon>assignment</mat-icon>
+    <span>Assignment</span>
+    <a mat-button routerLink="home">Home</a>
+    <a mat-button routerLink="about">About</a>
+    <div class="gap">
+    </div>
+    <a mat-raised-button color="warn" class="btn-space" routerLink="user/login" (click)="openSnackBar('Login Button Clicked Successfully','Dismiss')" >LogIn</a>
+    <a mat-raised-button color="accent" routerLink="user/signup" (click)="openSnackBar('SignUp Button Clicked Successfully','Close')">SignUp</a>
+
+</mat-toolbar>
+<router-outlet></router-outlet>
