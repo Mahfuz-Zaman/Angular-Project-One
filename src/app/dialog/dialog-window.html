@@ -6,8 +6,7 @@
     <input matInput [(ngModel)]="data.animal">
   </mat-form-field>
 </div>
-<br> <br> <br>
 <div mat-dialog-actions>
-  <button mat-button (click)="onNoClick()">No Thanks</button>
-  <button mat-button [mat-dialog-close]="data.animal" cdkFocusInitial>Ok</button>
+  <button mat-button color="warn" (click)="onNoClick()">No Thanks</button>
+  <button mat-button color="warn" [mat-dialog-close]="data.animal" cdkFocusInitial>Ok</button>
 </div>
