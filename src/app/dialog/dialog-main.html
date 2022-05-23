@@ -1,0 +1,14 @@
+<ol style="list-style:none ;margin:80%  -90% ;">
+    <li>
+        <mat-form-field appearance="fill">
+            <mat-label><strong>What's your name?</strong></mat-label>
+            <input matInput [(ngModel)]="name">
+        </mat-form-field>
+    </li>
+    <li>
+        <button mat-raised-button color="primary" (click)="openDialog()">select one</button>
+    </li>
+    <li *ngIf="animal">
+        You chose: <i>{{animal}}</i>
+    </li>
+</ol>

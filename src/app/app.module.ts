@@ -21,6 +21,9 @@ import { MatNativeDateModule } from '@angular/material/core';
 import { UserFormComponent } from './user-form/user-form.component';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { MatDialogModule } from '@angular/material/dialog';
+import { DialogMain } from './dialog/dialog';
+import { DialogWindow } from './dialog/dialog';
 
 @NgModule({
   declarations: [
@@ -29,6 +32,8 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
     HomeComponent,
     AboutComponent,
     UserFormComponent,
+    DialogMain,
+    DialogWindow,
   ],
   imports: [
     BrowserModule,
@@ -48,6 +53,7 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
     MatDatepickerModule,
     MatNativeDateModule,
     MatSnackBarModule,
+    MatDialogModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
